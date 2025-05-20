@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrazione Music Streaming</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Registrazione App Music Streaming</h1>
+    <form id="registrationForm">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" required><br><br>
+
+        <label for="email">Indirizzo Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="data_nascita">Data di Nascita:</label><br>
+        <input type="date" id="data_nascita" name="data_nascita" required><br><br>
+
+        <label for="telefono">Numero di Telefono:</label><br>
+        <input type="number" id="telefono" name="telefono" required><br><br>
+
+        <p>Seleziona i tuoi gusti musicali:</p>
+        <input type="checkbox" id="rock" name="gusti_musicali_rock" value="rock">
+        <label for="rock">Rock</label><br>
+        <input type="checkbox" id="pop" name="gusti_musicali_pop" value="pop">
+        <label for="pop">Pop</label><br>
+        <input type="checkbox" id="jazz" name="gusti_musicali_jazz" value="jazz">
+        <label for="jazz">Jazz</label><br>
+        <input type="checkbox" id="classica" name="gusti_musicali_classica" value="classica">
+        <label for="classica">Classica</label><br>
+        <input type="checkbox" id="hiphop" name="gusti_musicali_hiphop" value="hiphop">
+        <label for="hiphop">Hip Hop</label><br><br>
+
+        <p>Accettazione Termini e Condizioni:</p>
+        <input type="radio" id="accetta_termini" name="termini" value="accettato" required>
+        <label for="accetta_termini">Accetto i termini e le condizioni</label><br><br>
+
+        <input type="submit" value="Invia registrazione">
+    </form>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            alert('Registrazione inviata!');
+               
+        });
+    </script>
+</body>
+</html>
